@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center  text-5xl font-bold">Text <span class="text-red-500">Editor</span></h1>
+<section class="bg-sky-500  mt-6">
+    <div class="flex justify-around	text-3xl">
+        <div>
+            <button id="bold" onclick="bold()"><strong>B</strong></button>
+            <button id="italic" onclick="italic()"><i>I</i></button>
+            <button id="unerline" onclick="underline()"><u>U</u></button>
+        </div>
+        <div class="flex">
+            <img id="left"   onclick="left()" class="h-8 w-8 mt-4 "  src="./icon/left.svg" alt="">
+            <img id="center" onclick="center()" class="h-8 w-8 mt-4 " src="./icon/center.svg" alt="">
+            <img id="right"  onclick="right()" class="h-8 w-8 mt-4 " src="./icon/right.svg" alt="">
+            <img id="justify" onclick="justify()" class="h-8 w-8 mt-4 " src="./icon/justify.svg" alt="">
+        </div>
+        <div>
+            <button id="uppercase"   onclick="uppercase()" >AA</button>
+            <button id="normalcase"   onclick="normalcase()" >aa</button>
+        </div>
+        <div>
+            <select class="colopse" onchange="myFunction(this);">
+                <option>xx-small</option>
+                <option>x-small</option>
+                <option>small</option>
+                <option>medium</option>
+                <option>large</option>
+                <option>x-large</option>
+                <option>xx-large</option>
+                <option>100%</option>
+                <option>250%</option>
+                <option>2cm</option>
+                <option>100px</option>
+              </select>
+               </div>
+        <div>
+            <span>
+<input id="color" name="favcolor" onchange="colorStyle('favcolor')" type="color">
+            </span>
+        </div>
+    </div>
+    <textarea id="textarea1" class="textarea textarea-info w-9/12 h-96 mt-6	mx-40" placeholder="Kichu lekh bara...."></textarea>
+    </section>
+    <script src="note.js"></script>
+
+</body>
+</html>
